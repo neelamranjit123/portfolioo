@@ -1,0 +1,84 @@
+#intro {
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 100rem;
+    margin: 0 auto;
+    overflow: hidden;  
+    position: relative;  
+}
+
+.bg {
+    position: absolute;
+    top: -4rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 95vh;
+    animation: backgroundAnimation 20s linear infinite;
+}
+
+.introContent {
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;      
+}
+
+
+.hello {
+    font-size: 1.75rem;
+    font-weight: 500;    
+}
+
+.introName {
+    color: rgb(120, 232, 50);
+}
+
+.introPara {
+    font-size: medium;
+    font-weight: 300;
+}
+
+.btn {
+    background: white;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;    
+    border: none;
+    border-radius: 2rem;   
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: rgb(170, 170, 247); /* Change to the desired hover color */
+    transform: scale(1.05); /* Scale the button slightly on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    25% {
+        transform: translateX(5px) rotate(5deg);
+    }
+    50% {
+        transform: translateX(0) rotate(0deg);
+    }
+    75% {
+        transform: translateX(-5px) rotate(-5deg);
+    }
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}
+
+.btnImg {
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+}
+
