@@ -9,11 +9,11 @@
 
 .bg {
     position: absolute;
-    top: -4rem;
-    right: 0;
+    top: 0;
+    right: 7rem;
     z-index: -1;
     object-fit: cover;
-    height: 95vh;
+    height: 90vh;
     animation: backgroundAnimation 20s linear infinite;
 }
 
